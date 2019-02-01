@@ -128,7 +128,7 @@ header a:hover{
   border: 1px solid;
 }
 
-#display_none {
+.display_none {
   display: none;
 }
 
