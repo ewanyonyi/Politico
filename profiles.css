@@ -128,10 +128,6 @@ header a:hover{
   border: 1px solid;
 }
 
-.display_none {
-  display: none;
-}
-
 .submitbtn {
   background-color: #4CAF50;
   border: none;
