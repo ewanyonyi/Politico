@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <title>Politico</title>
+    <li onclick="castVote()">Cast a Vote</li>
     <link rel="stylesheet" href="profiles.css">
   </head>
   <body>
@@ -18,7 +19,7 @@
       <li>View all politicians running for Governors Seat in Nairobi.</li>
       <li>View all politicians running for MP in Roysambu.</li>
       <li>View all politicians running for MCA in Roysambu Ward.</li>
-      <li>Cast a Vote</li>
+      <li onclick="castVote()">Cast a Vote</li>
     </ul>
   </nav>
 <main class="panelD">
@@ -28,7 +29,24 @@
     <a href="#"> Logout</a>
   </header>
 
-  <h1 class="dash_contents">Political Parites Details</h1>
+  <h1 class="dash_contents">Political Information</h1>
+  <div id="vote" class="forms" style="display: none;">
+    <form  action="#">
+      <h3>Cast a Vote </h3>
+      <br />
+      <input type="text" placeholder="President" name="president" required autofocus >
+      <br />
+      <input type="text" placeholder="Governor"  name="governor" required>
+      <br />
+      <input type="text" placeholder="Senator"  name="senator" required>
+      <br />
+      <input type="text" placeholder="Member of Paliament"  name="member_of_paliament" required>
+      <br />
+      <input type="text" placeholder="MCA"  name="mca" required>
+      <br />
+      <button type="submit" class="submitbtn">Vote</button>
+    </form>
+  </div>
 
   <h2>All Political Parties</h2>
   <div class="tables">
@@ -71,5 +89,15 @@
 
 <a href="login.html" style="float:right">Logout</a>
 </main>
+    
+<script>
+  function castVote() {
+     var x = document.getElementById("vote");
+     if (x.style.display === "none") {
+        x.style.display = "block";
+     } else {
+        x.style.display = "none";
+     }
+   }
 </body>
 </html>
