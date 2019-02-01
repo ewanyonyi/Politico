@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <title>Politico</title>
-    <link rel="stylesheet" href="admin_dashboard.css">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
   </head>
   <body>
 
@@ -13,48 +13,69 @@
   <nav>
     <ul>
       <li>Dashboard</li>
-      <li>Create a political party.</li>
+      <li onclick="createParty()">Create a political party.</li>
       <li>Delete a political party.</li>
-      <li>Create a political office.</li>
+      <li onclick="createOffice()">Create a political office.</li>
       <li>Delete a political office.</li>
     </ul>
   </nav>
 
-
-
 <main class="panelD">
-
   <header>
     <a href="index.html"> Home</a>
     <a href="#"> Logout</a>
   </header>
 
   <h1 class="dash_contents">Dashboard</h1>
+  <div id="party" class="forms" style="display: none;">
+    <form  action="#">
+      <h3>Create a Political Party</h3>
+      <br />
+      <input type="text" placeholder="Party Name" name="party_name" required autofocus >
+      <br />
+      <input type="text" placeholder="Party Leader"  name="party_leader" required>
+      <br />
+      <input type="date" placeholder="Date Formed"  name="date_formed" required>
+      <br />
+      <button type="submit" class="submitbtn">Create</button>
+    </form>
+  </div>
 
-  <h2>Political Parties</h2>
-  <div class="parties">
-    <table>
-      <tr>
-        <th>&nbsp;</th>
-        <th>Political Party</th>
-        <th>Leader</th>
-        <th>Members Number</th>
-      </tr>
-      <tr>
-        <th>January</th>
-        <th>Party 1</th>
-        <th>Wafula </th>
-        <th>10 members</th>
-      </tr>
-      <tr>
-        <th>February</th>
-        <th>Party 2</th>
-        <th>Joseph</th>
-        <th>5 members</th>
-      </tr>
-    </table>
+  <div id="office" class="forms" style="display: none;">
+    <form  action="#">
+      <h3>Create a Political Office</h3>
+      <br />
+      <input type="text" placeholder="Office Name" name="office_name" required autofocus >
+      <br />
+      <input type="text" placeholder="Office Location" name="office_location" required>
+      <br />
+      <button type="submit" class="submitbtn">Create</button>
+    </form>
   </div>
 <a href="login.html" style="float:right">Logout</a>
 </main>
+
+<script>
+function createParty() {
+  var x = document.getElementById("party");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function createOffice() {
+  var y = document.getElementById("office");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
