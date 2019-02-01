@@ -38,7 +38,7 @@ nav {
 }
 
 .todo nav ul li{
-  background-color: #0000ff;
+  background-color: #526069;
   padding: 20px;
   margin-bottom: 6px;
   color:#ffffff;
@@ -62,7 +62,7 @@ header {
   height: 70px;
   width: 100%;
   border-bottom: solid 1px #d1d1d1;
-  background-color: #0000ff;
+  background-color: #526069;
   position: sticky;
   top: 0px;
   box-shadow: 1px 2px 15px rgba(0,0,0,0.1);
@@ -87,30 +87,6 @@ header a:hover{
   
 }
 
-.parties{
-  display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  filter: drop-shadow(0px 6px 0px #0000ff);
-}
-.parties table{
-  text-align: center;
-  padding: 40px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-}
-.parties table tr th{
-  font-size: 1em;
-  font-weight: 300;
-  border: solid 1px #ededed;
-  padding:3px 0px 3px 0px;
-  background-color: #fff;
-}
-
 .panelD h2{
   font-weight: 200;
   font-size: 1.2em;
@@ -119,4 +95,21 @@ header a:hover{
   padding-right: 50px;
   color: #333333;
   margin-bottom: 5px;
+}
+
+.forms {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.submitbtn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
