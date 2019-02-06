@@ -58,7 +58,7 @@
 function createParty() {
   var x = document.getElementById("party");
   var y = document.getElementById("office");
-  if (x.style.display === "none" || y.style.display === "block") {
+  if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
   } else {
@@ -69,7 +69,7 @@ function createParty() {
 function createOffice() {
   var y = document.getElementById("office");
   var x = document.getElementById("party");
-  if (y.style.display === "none" || x.style.display === "block") {
+  if (y.style.display === "none") {
     y.style.display = "block";
     x.style.display = "none";
   } else {
