@@ -1,6 +1,6 @@
 # Politico
 
-[![Build Status](https://travis-ci.org/realpython/flask-jwt-auth.svg?branch=develop)](https://travis-ci.org/realpython/flask-jwt-auth)
+
 
 ### Basics
 
