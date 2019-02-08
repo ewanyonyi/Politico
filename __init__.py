@@ -1,8 +1,8 @@
 """ Server initialization module """
 import os
 from flask import Flask
-from develop.api.v1.auth.auth_views import AUTH_API_BLUEPRINT
-from develop.api.v1.admin.admin_views import ADMIN_API_BLUEPRINT
+from api.v1.auth.auth_views import AUTH_API_BLUEPRINT
+from api.v1.admin.admin_views import ADMIN_API_BLUEPRINT
 # User a function
 app = Flask(__name__)
 
