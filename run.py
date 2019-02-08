@@ -1,5 +1,5 @@
 """ run server """
-from develop import app
+import app
 
 
 if __name__ == '__main__':
