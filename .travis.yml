@@ -4,4 +4,16 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
-    branch: master
+    branch: develop
+
+language: python
+
+python:
+  - "3.7.2"
+
+install:
+  - pip install -r requirements.txt
+  - pip install coveralls
+
+after_success:
+  - coveralls
