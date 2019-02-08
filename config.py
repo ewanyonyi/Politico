@@ -3,7 +3,6 @@ import os
 
 class BaseConfig(object):
     """ Base configuration. """
-    SECRET_KEY = os.getenv('SECRET_KEY', 'this_is_secret')
     DEBUG = False
 
 class DevelopmentConfig(BaseConfig):
@@ -15,9 +14,7 @@ class TestingConfig(BaseConfig):
     """
     DEBUG = True
     TESTING  = True
-    PRESERVE_CONTEXT_ON_EXCEPTION = False
 
 class ProductionConfig(BaseConfig):
     """Production configuration """
-    SECRET_KEY = 'this_is_secret'
     DEBUG = False
