@@ -1,3 +1,6 @@
+""" Run the tests """
+import unittest
+
 def test():
     """Runs the unit tests without test coverage."""
     tests = unittest.TestLoader().discover('develop/tests/v1', pattern='test*.py')
@@ -5,5 +8,7 @@ def test():
     if result.wasSuccessful():
         return 0
     return 1
+
 if __name__ == '__main__':
-    run()
+    test()
+    
