@@ -2,7 +2,7 @@
 import unittest
 import json
 from flask import json
-from develop import app
+import app
 
 class TestParties(unittest.TestCase):
     """ Testing for parties """
