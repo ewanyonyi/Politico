@@ -3,7 +3,7 @@
 import unittest
 from flask import current_app
 from flask_testing import TestCase
-from develop import app
+import app
 
 
 class TestDevelopmentConfig(TestCase):
