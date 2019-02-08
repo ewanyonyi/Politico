@@ -5,25 +5,12 @@ deploy:
   keep-history: true
   on:
     branch: develop
-
 language: python
-
-# blocklist
-branches:
-  except:
-  - master
-  - gh-pages
-
-# safelist
-branches:
-  only:
-  - develop
 python:
-  - "3.7.2"
-
+  - "3.7-dev"  # 3.7 development branch
+# command to install dependencies
 install:
   - pip install -r requirements.txt
-  - pip install coveralls
-
-after_success:
-  - coveralls
+# command to run tests
+script:
+  - pytest
