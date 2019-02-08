@@ -14,21 +14,15 @@ Update *config.py*, and then run:
 ### Run the Application
 
 ```sh
-$ python manage.py run.py
+$ python run.py
 ```
 
-Access the application at the address http://localhost:5000/
-
-> Want to specify a different port?
-
-> ```sh
-> $ python manage.py runserver -h 0.0.0.0 -p 8080
-> ```
+Access the application at the address http://localhost:5000/``
 
 ### Testing
 
 Without coverage:
 Change your directory to tests/v1 and the run the tests as shown below
 ```sh
-$ python manage.py test
+$ python test_filename.py
 ````
