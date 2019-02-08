@@ -17,12 +17,22 @@ Update *config.py*, and then run:
 $ python run.py
 ```
 
+
 Access the application at the address http://localhost:5000/``
 
-### Testing
+### API End Points
+a. Sign up: /api/v1/auth/signup
+b. Sign in: /api/v1/auth/signin
+c. Create Party: /api/v1/admin/createparty
+d. Get all parties: /api/v1/admin/parties/getall
+e. Get specific part: /api/v1/admin/parties/get/<id of type int>
+f. Delete specific party: /api/v1/admin/parties/delete/<id of type int>
+g. Edit specific party: /api/v1/admin/parties/edit/2
+h. Create a political office: /api/v1/admin/createoffice
+i. Get all political offices: /api/v1/admin/offices/getall
+j. Get specific political office: /api/v1/admin/offices/get/1
 
-Without coverage:
-Change your directory to tests/v1 and the run the tests as shown below
+### Run tests
 ```sh
-$ python test_filename.py
-````
+$python run_tests.py
+```
