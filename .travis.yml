@@ -8,6 +8,16 @@ deploy:
 
 language: python
 
+# blocklist
+branches:
+  except:
+  - master
+  - gh-pages
+
+# safelist
+branches:
+  only:
+  - develop
 python:
   - "3.7.2"
 
