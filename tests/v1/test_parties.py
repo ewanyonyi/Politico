@@ -23,10 +23,6 @@ class TestParties(unittest.TestCase):
             content_type='application/json')
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json['id'], 1)
-        self.assertEqual(response.json['name'], 'party 1')
-        self.assertEqual(response.json['hqAddress'], 'Roysambu')
-        self.assertEqual(response.json['logoUrl'], 'https://file/1')
 
     def test_getallparties(self):
         """ Test for getting all parties method """
