@@ -35,7 +35,7 @@ Access the application at the address http://localhost:5000/``
 ----------------------------------------------------------------------------------------
 |Get specific part                  |GET       |/api/v1/admin/parties/party_id          |
 ---------------------------------------------------------------------------------------
-|Delete specific party              |DELETE    | /api/v1/admin/parties//party_id        |
+|Delete specific party              |DELETE    | /api/v1/admin/parties/party_id        |
 ---------------------------------------------------------------------------------------
 |Edit specific party                | PUT      | /api/v1/admin/parties/party_id         |
 ----------------------------------------------------------------------------------------
@@ -45,10 +45,3 @@ Access the application at the address http://localhost:5000/``
 ----------------------------------------------------------------------------------------
 |Get specific political office      | GET      | /api/v1/admin/offices/office_id        |
 -----------------------------------------------------------------------------------------
-
-
-
-### Run tests
-```sh
-$python run_tests.py
-```
