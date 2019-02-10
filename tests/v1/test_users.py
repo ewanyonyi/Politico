@@ -2,7 +2,7 @@
 import json
 import unittest
 from flask import json
-import app
+from server import app
 
 class TestUsers(unittest.TestCase):
     """ User testing class """
