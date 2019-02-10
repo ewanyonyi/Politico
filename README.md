@@ -1,6 +1,6 @@
 # Politico
 
-
+[![Build Status](https://travis-ci.org/emanuelwanyonyi/Politico.svg?branch=develop)](https://travis-ci.org/emanuelwanyonyi/Politico)
 
 ### Basics
 
