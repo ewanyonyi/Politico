@@ -1,8 +1,8 @@
 """ Admin REST api Views"""
 
 from flask import Blueprint, request, make_response, jsonify
-from develop.api.v1.auth.auth_models import Users, users_data
-from develop.api.v1.checkers.validators import Validator
+from api.v1.auth.auth_models import Users, users_data
+from api.v1.checkers.validators import Validator
 AUTH_API_BLUEPRINT = Blueprint('auth', __name__)
 
 
@@ -11,21 +11,16 @@ def siginup():
     """ This method is used to register the user in the server using the REST api """
     # Get the post data
     post_data = request.get_json(force=True) # force=True to ignore header requirements
-    settle_email = Validator.validate_email(post_data['email'])
-    settle_password = Validator.validate_password(post_data['password'])
-
+    
     if not post_data:
         response_object = {
             "status":400,
             "error" : 'Bad Request'
         }
-    elif post_data is None:
-        response_object = {
-            "status":400,
-            "error" : 'Bad Request'
-        }
+    settle_email = Validator.validate_email(post_data['email'])
+    settle_password = Validator.validate_password(post_data['password'])    
     
-    elif settle_email != 1:
+    if settle_email != 1:
         response_object = {
             "status":400,
             "error" : settle_email
@@ -64,16 +59,31 @@ def siginin():
     """ This method is used to sigin in the user in the server using the REST api """
     # Get the post data
     post_data = request.get_json(force=True) # force=True to ignore header requirements
-    email = post_data.get('email')
-    password = post_data.get('password')
-    if post_data is None:
+    response_object = None
+    if not post_data:
         response_object = {
             "status":400,
             "error" : 'Bad Request'
         }
+    settle_email = Validator.validate_email(post_data['email'])
+    settle_password = Validator.validate_password(post_data['password'])    
+    
+    if settle_email != 1:
+        response_object = {
+            "status":400,
+            "error" : settle_email
+        }
+    elif settle_password != 1:
+        response_object = {
+            "status":400,
+            "error" : settle_password
+        }
+        
     else:
         for user in users_data:
-            if user.get('email') == email and user.get('password') == password:
+            email = post_data.get('email')
+            password = post_data.get('password')
+            if user['email'] == email and user['password'] == password:
                 response_object = {
                     'status': 200,
                     'data':[
