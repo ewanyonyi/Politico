@@ -12,7 +12,7 @@ change directory to Scripts and run activate file to activate the  virtualenv
 
 ### Set Environment Variables
 
-Update *config.py*, and then run:
+Update *server/config.py*, and then run:
 ### Run the Application
 
 ```sh
