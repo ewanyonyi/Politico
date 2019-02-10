@@ -7,7 +7,7 @@ users_data = [
             'lastname':'Wanyonyi',
             'othername':'Dickson',
             'email':'admin@gmail.com',
-            'phone_number':'0703793386', # Remove this
+            'phone_number':'0703793386', 
             'passport_url':'String',
             'is_admin':True,
             'password':'test@1234'
