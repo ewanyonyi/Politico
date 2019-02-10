@@ -10,5 +10,5 @@ class BaseTestCase(TestCase):
 
     def create_app(self):
         """ Test for creating an app """
-        app.config.from_object('develop.config.TestingConfig')
+        app.config.from_object('server.config.TestingConfig')
         return app
