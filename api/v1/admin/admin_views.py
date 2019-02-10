@@ -1,7 +1,7 @@
 """ Admin REST api Views"""
 
 from flask import Blueprint, request, make_response, jsonify
-from develop.api.v1.admin.admin_models import Parties, Offices, offices_data, parties_data
+from api.v1.admin.admin_models import Parties, Offices, offices_data, parties_data
 
 ADMIN_API_BLUEPRINT = Blueprint('admin', __name__)
 
