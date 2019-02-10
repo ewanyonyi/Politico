@@ -79,7 +79,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+Scripts/
+pyvenv.cfg
 
 # Pyre type checker
 .pyre/
