@@ -5,7 +5,7 @@
 ### Basics
 
 1. Fork/Clone https://github.com/emanuelwanyonyi/Politico.git
-```For windows system ```
+1. ```For windows system ```
 1. Run python -m 'your cloned directory name' and move to the directory, 
 change directory to Scripts and run activate file to activate the  virtualenv
 1. Install the requirements in the requirements file
@@ -27,23 +27,23 @@ Access the application at the address http://localhost:5000/``
 ---------------------------------------------------------------------------------------
 |Sign up                            |POST      |/api/v1/auth/signup                     |
 ---------------------------------------------------------------------------------------
-|Sign in                            |POST      |/api/v1/admin/createparty               |
+|Sign in                            |POST      |/api/v1//auth/signin                    |
 ---------------------------------------------------------------------------------------
-|Create Party                       |POST      |/api/v1/admin/createparty               |
+|Create Party                       |POST      |/api/v1/admin/parties                   |
 ----------------------------------------------------------------------------------------
-|Get all parties                    |GET       | /api/v1/admin/parties/getal             |
+|Get all parties                    |GET       | /api/v1/admin/parties                  |
 ----------------------------------------------------------------------------------------
-|Get specific part                  |GET       |/api/v1/admin/parties/get/party_id       |
+|Get specific part                  |GET       |/api/v1/admin/parties/party_id          |
 ---------------------------------------------------------------------------------------
-|Delete specific party              |DELETE    | /api/v1/admin/parties/delete/party_id   |
+|Delete specific party              |DELETE    | /api/v1/admin/parties//party_id        |
 ---------------------------------------------------------------------------------------
-|Edit specific party                | PUT      | /api/v1/admin/parties/edit/party_id     |
+|Edit specific party                | PUT      | /api/v1/admin/parties/party_id         |
 ----------------------------------------------------------------------------------------
-|Create a political office          | POST     |/api/v1/admin/createoffice                |
+|Create a political office          | POST     |/api/v1/admin/offices                   |
 ----------------------------------------------------------------------------------------
-|Get all political offices          |GET       | /api/v1/admin/offices/getall            |
+|Get all political offices          |GET       | /api/v1/admin/offices                  |
 ----------------------------------------------------------------------------------------
-|Get specific political office      | GET      | /api/v1/admin/offices/get/office_id      |
+|Get specific political office      | GET      | /api/v1/admin/offices/office_id        |
 -----------------------------------------------------------------------------------------
 
 
