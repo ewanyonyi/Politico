@@ -41,23 +41,23 @@ offices_data = [
 
 class Parties():
     """ Class for parties data """
-    def __init__(self, party_id, name, hq_address, logo_url):
-        self.party_id = party_id
-        self.name = name
-        self.hq_address = hq_address
-        self.logo_url = logo_url
+    def __init__(self):
+        self.parties_data = parties_data
+
     def save(self):
         """ Save party method"""
         parties_data.append(self)
 
+    
+
 class Offices():
     """ Class for Offices data """
-    def __init__(self, office_id, office_type, name):
-        self.office_id = office_id
-        self.office_type = office_type
-        self.name = name
+    def __init__(self):
+        
+        self.offices_data = offices_data
+
 
     def save(self):
         """ Save Office method """
         offices_data.append(self)
-    
+        
