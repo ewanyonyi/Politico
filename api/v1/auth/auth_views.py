@@ -2,7 +2,7 @@
 
 from flask import Blueprint, request, make_response, jsonify
 from api.v1.auth.auth_models import Users, users_data
-from api.v1.checkers.validators import Validator
+from develop.api.v1.checkers.validators import Validator
 AUTH_API_BLUEPRINT = Blueprint('auth', __name__)
 
 
