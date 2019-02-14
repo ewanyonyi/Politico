@@ -4,7 +4,6 @@ from flask import Blueprint, request, make_response, jsonify
 from server.api.v1.admin.admin_models import Parties, Offices, offices_data, parties_data
 
 admin_api_v1_blueprint = Blueprint('admin', __name__)
-
 @admin_api_v1_blueprint.route('/parties', methods=['POST'])
 def createparty():
     """ This method is used to create a party by the web site admin """
