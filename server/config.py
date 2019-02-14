@@ -1,6 +1,4 @@
 # Server configuration module """
-# Server config file
-import os
 
 import os
 POSTGRES = {

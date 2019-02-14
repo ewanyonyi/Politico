@@ -11,14 +11,14 @@ class TestOffices(unittest.TestCase):
         self.client = self.app.test_client()
         self.office_data = {
             "office_id" : 1,
-            "office_type" :"fed",
+            "office_type" :"Federal",
             "name" : "office1"
         }
 
     def test_createoffice(self):
         """ Test for create office method """
         response = self.client.post(
-            '/api/v1/admin/offices', data=json.dumps(self.office_data), 
+            '/api/v1/offices', data=json.dumps(self.office_data), 
             content_type='application/json')
         print(response)
         self.assertEqual(response.status_code, 201)
@@ -26,21 +26,21 @@ class TestOffices(unittest.TestCase):
 
     def test_getalloffices(self):
         """ Test for getting all offices method """
-        response = self.client.get('/api/v1/admin/offices')
+        response = self.client.get('/api/v1/offices')
         print(response)
         self.assertEqual(response.status_code, 200)
 
     def getoffice(self):
         """ Test for getting a specific party method """
         response = self.client.get(
-            '/api/v1/admin/parties/get/<int:party_id>', content_type='application/json')
+            '/api/v1/parties/get/<int:party_id>', content_type='application/json')
 
         self.assertEqual(response.status_code, 200)
 
     def editoffice(self):
         """ Test for getting a specific party method """
         response = self.client.post(
-            '/api/v1/admin/offices/<int:office_id>', data=json.dumps(self.office_data), 
+            '/api/v1/offices/<int:office_id>', data=json.dumps(self.office_data), 
             content_type='application/json')
         self.assertEqual(response.status_code, 200)
 
