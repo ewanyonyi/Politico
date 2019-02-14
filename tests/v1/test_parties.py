@@ -21,7 +21,7 @@ class TestParties(unittest.TestCase):
             '/api/v1/parties', data=json.dumps(self.party_data), 
             content_type='application/json')
 
-        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.status_code, 200)
 
     def test_getallparties(self):
         """ Test for getting all parties method """
