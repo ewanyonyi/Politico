@@ -7,18 +7,19 @@
 ### Basics
 
 1. Fork/Clone https://github.com/emanuelwanyonyi/Politico.git
+
 1. ```For windows system ```
+
 1. Run python -m 'your cloned directory name' and move to the directory, 
 change directory to Scripts and run activate file to activate the  virtualenv
-1. Install the requirements in the requirements file
-
-### Set Environment Variables
+### Install requirements
+1. pip install -r requirements.txt
 
 Update *server/config.py*, and then run:
-### Run the Application
 
+### Run the Application
 ```sh
-$ python run.py
+$ python manage.py runserver
 ```
 
 Access the application at the address http://localhost:5000/``
