@@ -21,7 +21,7 @@ class TestOffices(unittest.TestCase):
             '/api/v1/offices', data=json.dumps(self.office_data), 
             content_type='application/json')
         print(response)
-        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.status_code, 200)
 
 
     def test_getalloffices(self):
