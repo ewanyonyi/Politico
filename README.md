@@ -8,7 +8,7 @@
 
 1. Fork/Clone https://github.com/emanuelwanyonyi/Politico.git
 
-1. ## Activate Virtual Environment
+## Activate Virtual Environment
 
 1. Run python -m 'your cloned directory name' and move to the directory, 
 change directory to Scripts and run activate file to activate the  virtualenv
