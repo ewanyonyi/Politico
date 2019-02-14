@@ -1,5 +1,5 @@
 """ This the base testing """
-# develop/tests/v1/base.py
+# server/tests/v1/base.py
 
 from flask_testing import TestCase
 from server import app

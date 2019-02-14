@@ -1,6 +1,8 @@
 # Politico
 
-[![Build Status](https://travis-ci.org/emanuelwanyonyi/Politico.svg?branch=develop)](https://travis-ci.org/emanuelwanyonyi/Politico)
+[![Build Status](https://travis-ci.org/emanuelwanyonyi/Politico.svg?branch=develop)](https://travis-ci.org/emanuelwanyonyi/Politico)  <a href="https://codeclimate.com/github/emanuelwanyonyi/Politico/maintainability"><img src="https://api.codeclimate.com/v1/badges/a1018e71752a814039fa/maintainability" /></a>
+
+
 
 ### Basics
 
