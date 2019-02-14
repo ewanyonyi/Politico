@@ -8,7 +8,7 @@
 
 1. Fork/Clone https://github.com/emanuelwanyonyi/Politico.git
 
-1. ```For windows system ```
+1. ## Activate Virtual Environment
 
 1. Run python -m 'your cloned directory name' and move to the directory, 
 change directory to Scripts and run activate file to activate the  virtualenv
@@ -26,11 +26,7 @@ Access the application at the address http://localhost:5000/``
 
 ### API End Points
 ---------------------------------------------------------------------------------------
-|End point name                     |Method    |Endpoint url                            | 
----------------------------------------------------------------------------------------
-|Sign up                            |POST      |/api/v1/auth/signup                     |
----------------------------------------------------------------------------------------
-|Sign in                            |POST      |/api/v1/auth/signin                    |
+|End point name                     |Method    |Endpoint url                            |
 ---------------------------------------------------------------------------------------
 |Create Party                       |POST      |/api/v1/admin/parties                   |
 ----------------------------------------------------------------------------------------
