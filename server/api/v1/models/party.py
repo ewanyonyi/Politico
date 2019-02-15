@@ -1,4 +1,4 @@
-""" Office Models """
+""" Parties Models """
 parties_data = []
 
 
